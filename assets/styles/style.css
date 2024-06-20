@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "kudry";
+    src: url(../fonts/kudry_weird-headline.otf);
+}
+
+@font-face {
+    font-family: "Felidae";
+    src: url(../fonts/Felidae.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CenturyModern";
+    src: url(../fonts/CenturyModernTtRegular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TransformiaMix";
+    src: url(../fonts/TransformaMix-Variable.ttf);
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+body{
+    background: url(../img/bg.png);
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section-navbar .navbar-btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    background: #d1a36e7e;
+    font-family: "TransformiaMix";
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 0 0 15px 15px;
+}
+
+.section-navbar .navbar-btns a{
+    text-decoration: none;
+    color: #8b4923;
+}
+
+.section-header-main{
+    padding: 25px 0;
+}
+
+.section-header-main .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid #702a02 1px;
+}
+
+.section-header-main .img img{
+    align-self: end;
+}
+
+.section-header-main .text h1{
+    font-family: "kudry";
+    font-weight: 400;
+    font-size: 90px;
+    padding-bottom: 60px;
+    color: #702a02;
+}
+
+.section-header-main .text h2{
+    font-family: "TransformiaMix";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 125%;
+    padding: 10px 30px;
+    color: #8b4923;
+}
+
+
