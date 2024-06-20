@@ -47,6 +47,7 @@ body{
     font-size: 22px;
     font-weight: 500;
     border-radius: 0 0 15px 15px;
+    margin: 0 auto
 }
 
 .section-navbar .navbar-btns a{
@@ -109,6 +110,10 @@ body{
     width: 5%;
 }
 
+.section-skills .container{
+    border-bottom: solid #702a02 1px;
+}
+
 .section-skills .skill-types .mini-title{
     text-transform: uppercase;
     font-family: "Felidae";
@@ -123,6 +128,7 @@ body{
 .section-skills .skill-types{
     display: flex;
     justify-content: space-between;
+    padding: 50px 0;
 }
 
 .section-skills .skill-types .soft-skills, .hard-skills{
@@ -151,3 +157,57 @@ body{
 .section-skills .skill-types .soft-skills .skill-list{
     width: 100%;
 }
+
+.section-portfolio .works .site-works{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.section-portfolio .works .card{
+    width: 475px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.section-portfolio .works .card .preview{
+    height: 80%;
+}
+
+.section-portfolio .works .site-works .card:nth-child(1) .preview{
+    background-image: url(../img/mogo_preview.png);
+} 
+
+.section-portfolio .works .site-works .preview:nth-child(2){
+    background-image: url(../img/mimilo_preview.png);
+} 
+
+.section-portfolio .works .mini-title{
+    font-family: "Felidae";
+    font-size: 32px;
+    text-transform: uppercase;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: end;
+    letter-spacing: 15px;
+    height: 50px;
+    width: 460px;
+    color: #F7AE63;
+    transform: rotate(-90deg);
+}
+
+.section-portfolio .works .design-works{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+    gap: 30px;
+}
+
+.section-portfolio .works .design-works .mini-title{
+    grid-row-end: 8;
+}
+
