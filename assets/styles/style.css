@@ -1,6 +1,7 @@
 @font-face {
     font-family: "kudry";
     src: url(../fonts/kudry_weird-headline.otf);
+    font-weight: 400;
 }
 
 @font-face {
@@ -8,12 +9,6 @@
     src: url(../fonts/Felidae.ttf);
     font-style: normal;
     font-weight: 400;
-}
-
-@font-face {
-    font-family: "CenturyModern";
-    src: url(../fonts/CenturyModernTtRegular.ttf);
-    font-style: normal;
 }
 
 @font-face {
@@ -57,6 +52,13 @@ body{
 .section-navbar .navbar-btns a{
     text-decoration: none;
     color: #8b4923;
+    padding: 8px;
+}
+
+.section-navbar .navbar-btns a:hover{
+    background-color: #d6dfffd5;
+    color: white;
+    transition: 0.3s;
 }
 
 .section-header-main{
@@ -91,4 +93,61 @@ body{
     color: #8b4923;
 }
 
+.title h3{
+    font-family: "kudry";
+    font-size: 55px;
+    font-weight: 400;
+}
 
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.title img{
+    width: 5%;
+}
+
+.section-skills .skill-types .mini-title{
+    text-transform: uppercase;
+    font-family: "Felidae";
+    font-size: 26px;
+    width: 50%;
+}
+
+.section-skills .skill-types .mini-title h4{
+    height: 300px;
+}
+
+.section-skills .skill-types{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-skills .skill-types .soft-skills, .hard-skills{
+    display: flex;
+    width: 45%;
+}
+
+.section-skills .skill-types .skill{
+    display: flex;
+    font-family: "TransformiaMix";
+    font-size: 22px;
+    padding: 10px;
+}
+
+.section-skills .skill-types .skill .num p{
+    background-color: #d1a36e7e;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-skills .skill-types .soft-skills .skill-list{
+    width: 100%;
+}
