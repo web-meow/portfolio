@@ -11,16 +11,16 @@
         <div class="section-navbar">
             <div class="container">
                 <div class="navbar-btns">
-                    <a href="">Главная</a>
-                    <a href="">Скиллы</a>
-                    <a href="">Портфолио</a>
-                    <a href="">Карьера</a>
-                    <a href="">Контакты</a>
+                    <a href="#main">Главная</a>
+                    <a href="#skills">Скиллы</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#career">Карьера</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
             </div>
         </div>
 
-        <div class="section-header-main">
+        <div class="section-header-main" id="main">
             <div class="container">
                 <div class="text">
                     <h1>Оленева Анастасия</h1>
@@ -35,7 +35,7 @@
     </header>
 
     <main>
-        <div class="section-skills">
+        <div class="section-skills" id="skills">
             <div class="container">
                 <div class="title">
                     <img class="deco" src="./assets/img/sun elem.svg" alt="">
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="section-portfolio">
+        <div class="section-portfolio" id="portfolio">
             <div class="container">
                 <div class="title">
                     <img class="deco" src="./assets/img/sun elem.svg" alt="">
@@ -254,7 +254,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="section-career" id="career">
+            <div class="container">
+                <div class="title">
+                    <img class="deco" src="./assets/img/sun elem.svg" alt="">
+                    <h3>Карьера</h3>
+                    <img class="deco" src="./assets/img/sun elem.svg" alt="">
                 </div>
+                <div class="navbar">
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                </div>
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="step" id="slide-1">
+                            <div class="text">
+                                <h4>В 2021 году учительница по информатике записала меня на курс по изучению языка Python. Как итог, я поняла что это мне интересно</h4>
+                            </div>
+                            <div class="img">
+                                <img src="./assets/img/stepik-certificate.png" alt="">
+                            </div>
+                        </div>
+                        <div class="step" id="slide-2">
+                            <div class="img">
+                                <img src="./assets/img/sindzi.png" alt="" style="width: 82%; object-fit: contain;">
+                            </div>
+                            <div class="text">
+                                <h4>В 2022 поступила в Нижегородский Губернский колледж на специальность Программирование в компьютерных сетях</h4>
+                            </div>
+                            <div class="img">
+                                <img src="./assets/img/slide_img2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="step" id="slide-3">
+                            <div class="text">
+                                <h4>В конце первого курса моего обучения в колледже я выбрала направление веб-разработка. <br> <span>Интересно, появится ли здесь потом слайд про то как меня отчислили</span></h4>
+                            </div>
+                            <div class="img">
+                                <img src="./assets/img/slide_img3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
