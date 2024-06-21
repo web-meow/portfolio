@@ -358,3 +358,151 @@ body{
     font-size: 12px;
     line-height: 50%;
 }
+
+.section-hobby .text h4{
+    font-family: "Felidae";
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+
+.section-hobby .text p{
+    font-family: "TransformiaMix";
+    font-size: 20px;
+}
+
+.section-hobby .arts .gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.section-hobby .arts .gallery .card{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px 5px #8b49235a;
+}
+
+.section-hobby .arts .gallery .card:nth-child(1){
+    background-image: url(../img/gallery_img1.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(2){
+    background-image: url(../img/gallery_img2.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(3){
+    background-image: url(../img/gallery_img3.png);
+    background-size: cover;
+}
+.section-hobby .arts .gallery .card:nth-child(4){
+    background-image: url(../img/gallery_img4.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(5){
+    background-image: url(../img/gallery_img5.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.section-hobby .arts .gallery .card:nth-child(6){
+    background-image: url(../img/gallery_img6.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(7){
+    background-image: url(../img/gallery_img7.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(8){
+    background-image: url(../img/gallery_img8.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-hobby .arts .gallery .card:nth-child(9){
+    background-image: url(../img/gallery_img9.png);
+    background-size: cover;
+}
+.section-hobby .arts .gallery .card:nth-child(10){
+    background-image: url(../img/gallery_img10.jpg);
+    background-size: cover;
+}
+.section-hobby .arts .gallery .card:nth-child(11){
+    background-image: url(../img/gallery_img11.png);
+    background-size: cover;
+}
+.section-hobby .arts .gallery .card:nth-child(12){
+    background-image: url(../img/gallery_img12.png);
+    background-size: cover;
+}
+
+.section-hobby .arts .card .hover{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black 0%, rgba(255,255,255,0) 100%);
+    display: flex;
+    align-items: end;
+    color: white;
+    font-family: "TransformiaMix";
+    font-size: 18px;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.section-hobby .arts .card .hover:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.section-hobby .cinema .list .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Felidae";
+    font-size: 20px;
+}
+
+.section-hobby .cinema .gbh{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+
+.section-hobby .cinema .gbh img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s;
+}
+
+.section-hobby .cinema .card img:hover{
+    width: 110%;
+    transition: 1s;
+}
+
+.section-hobby .cinema .eeaao{
+    width: 100%;
+    height: 180px;
+    z-index: 100;
+}
+
+.section-hobby .cinema .eeaao img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s;
+    z-index: 10;
+}
+
+.section-hobby .cinema .eeaao img:hover{
+    width: 105%;
+    transition: 1s;
+}
