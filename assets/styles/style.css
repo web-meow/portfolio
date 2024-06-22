@@ -379,8 +379,8 @@ body{
 }
 
 .section-hobby .arts .gallery .card{
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     box-shadow: 0 0 10px 5px #8b49235a;
 }
 
@@ -463,17 +463,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-family: "Felidae";
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .section-hobby .cinema .gbh{
     height: 300px;
     width: 400px;
     position: relative;
-    top: 150px;
+    top: 160px;
+    left: 3%;
     z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
 }
 
 .section-hobby .cinema .gbh img{
@@ -488,10 +491,19 @@ body{
     transition: 1s;
 }
 
+.section-hobby .cinema .list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 180px;
+}
+
 .section-hobby .cinema .eeaao{
     width: 100%;
     height: 180px;
     z-index: 100;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2/3;
 }
 
 .section-hobby .cinema .eeaao img{
@@ -502,7 +514,97 @@ body{
     z-index: 10;
 }
 
-.section-hobby .cinema .eeaao img:hover{
+.section-hobby .cinema .eeaao:hover img{
     width: 105%;
     transition: 1s;
+}
+
+.section-hobby .cinema .eeaao:hover .hover{
+    opacity: 1;
+    width: 105%;
+    transition: 1s;
+    top: 80%;
+}
+
+.section-hobby .cinema .card{
+    flex-direction: column-reverse;
+}
+
+.section-hobby .cinema .eeaao .hover{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 75%;
+    z-index: 11;
+    background: linear-gradient(0deg, rgb(0, 0, 0, 0.7) 0%, rgba(255,255,255,0) 100%);
+    transition: 1s;
+}
+
+.section-hobby .cinema .eeaao .hover span{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.section-hobby .cinema .dps{
+    width: 350px;
+    height: 350px;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    position: relative;
+    top: 40%;
+}
+
+.section-hobby .cinema .dps img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-hobby .cinema .dps:hover img{
+    width: 105%;
+    height: 105%;
+    transition: 1s;
+}
+
+.section-hobby .cinema .dps:hover{
+    top: 35%;
+    transition: 1s;
+}
+
+.section-hobby .cinema .spn{
+    width: 200%;
+    height: 300px;
+    position: relative;
+    top: 30%;
+}
+
+.section-hobby .cinema .spn img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s;
+}
+
+.section-hobby .cinema .spn:hover img{
+    width: 105%;
+    height: 105%;
+    transition: 1s;
+}
+
+.section-hobby .cinema .card .hover{
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-hobby .cinema .card:hover .hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.section-hobby .cinema .list{
+    position: relative;
+    bottom: 50px;
 }
